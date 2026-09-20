@@ -8,19 +8,8 @@ authors = ["niteshkumarm287"]
 readme = "README.md"
 packages = [{ include = "cassandra_cli" }]
 
-[[tool.poetry.source]]
-name = "pypi"
-priority = "primary"
-
-[[tool.poetry.source]]
-name = "pypi-dev-local"
-url = "https://jfrog.io/artifactory/" # update
-priority = "supplemental"
-
 [tool.poetry.dependencies]
 python = ">=3.12,<4.0"
-libs = "^0.4.2" # update
-coverage = "^7.13.4"
 
 [tool.poetry.group.dev.dependencies]
 coverage = "^7.13.4"
